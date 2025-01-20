@@ -17,7 +17,7 @@ Bot = Client(
 
 #--------------------------------------------------------------------------------------------------
 
-@Bot.on_message(filters.group & filters.text & filters.command("guard"))
+@Bot.on_message(filters.group & filters.text)
 async def slang(bot, message):
     sender = await Bot.get_chat_member(message.chat.id, message.from_user.id)
     isadmin = sender.privileges
