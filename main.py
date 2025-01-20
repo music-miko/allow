@@ -32,7 +32,7 @@ async def slang(bot, message):
                 sentence = sentence.replace(word, f'||{word}||')
         if isslang:
             name = message.from_user.first_name
-            msgtxt = f"""{name} your message has been deleted due to the presence of inappropriate language. Here is a censored version of your message:
+            msgtxt = f"""{mention} your message has been deleted due to the presence of inappropriate language. Here is a censored version of your message:
             
 {sentence}
             """
